@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Task 6.1D Sql</string>
+
+    <string-array name="city_names">
+        <item>Veges</item>
+        <item>Starch</item>
+        <item>Pizza</item>
+        <item>Fresh Vegetables</item>
+        <item>Fast Food</item>
+        <item>Curry</item>
+        <item>Burgers</item>
+        <item>Chips and Burgers</item>
+        <item>Sweets</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Fresh homegrown Vegetable pack for sale. Low price. Support sentences give more information through the....</item>
+        <item>Party left overs in good condition with various items. Support sentences give more information through the....</item>
+        <item>Home made BBQ pizza near you. Support sentences give more information through the.......</item>
+        <item>Newly bought vegetables from Coles today. Support sentences give more information through the....</item>
+        <item>MacDonalds Happy meal available. Support sentences give more information through the....</item>
+        <item>A hot chicken curry just made. Support sentences give more information through the....</item>
+        <item>MacDonalds Happy meal available. Support sentences give more information through the....</item>
+        <item>Party left overs in good condition with various items. Support sentences give more information through the....</item>
+        <item>Sweets from a Baby Shower. Support sentences give more information through the....</item>
+    </string-array>
 </resources>
