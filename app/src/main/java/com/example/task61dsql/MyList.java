@@ -2,6 +2,8 @@ package com.example.task61dsql;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -14,23 +16,25 @@ import android.widget.Toast;
 
 public class MyList extends AppCompatActivity {
 
-    ImageView mainImageView;
-    TextView title, description;
+    RecyclerView recyclerView;
 
-    String data1, data2;
-    int myImage;
+    String names[], description[];
+    int images[] = {R.drawable.food1, R.drawable.food2, R.drawable.food3, R.drawable.food4, R.drawable.food5, R.drawable.food6, R.drawable.food7,R.drawable.food8,R.drawable.food9};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_list);
 
-        mainImageView = findViewById(R.id.mainImageView);
-        title = findViewById(R.id.title);
-        description = findViewById(R.id.description);
+        recyclerView = findViewById(R.id.recyclerView);
 
-        getData();
-        setData();
+        names = getResources().getStringArray(R.array.city_names);
+        description = getResources().getStringArray(R.array.description);
+
+        MyAdapter myAdapter = new MyAdapter(this, names, description, images);
+        recyclerView.setAdapter(myAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
 
     @Override
@@ -54,23 +58,5 @@ public class MyList extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    private void getData(){
-        if(getIntent().hasExtra("myImage") && getIntent().hasExtra("data1") && getIntent().hasExtra("data2")){
-            data1 = getIntent().getStringExtra("data1");
-            data2 = getIntent().getStringExtra("data2");
-            myImage = getIntent().getIntExtra("myImage", 1);
-        }else{
-            Toast.makeText(this,"Data not Available", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    private void setData(){
-        title.setText(data1);
-        title.setTextColor(Color.parseColor("#000000"));
-        description.setText(data2);
-        description.setTextColor(Color.parseColor("#000000"));
-        mainImageView.setImageResource(myImage);
     }
 }

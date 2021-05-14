@@ -69,6 +69,7 @@
         android:textSize="20sp"
         android:gravity="center"
         android:hint="Password"
+        android:inputType="textPassword"
         android:background="@drawable/textview_border"
         app:layout_constraintStart_toStartOf="@id/Left"
         app:layout_constraintEnd_toEndOf="@id/Right"
