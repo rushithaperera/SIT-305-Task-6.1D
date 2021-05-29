@@ -37,7 +37,7 @@ public class SelectedItem extends AppCompatActivity {
     ImageButton pay;
 
     public static final String TAG = "PaymentExample";
-    public static final String PAYPAL_KEY = "AV7x4-OtWfXF3Zbj66jB4D5Fsh5IwNE3uvXqyT60aY9d7j2iL-GXVKHfEYIa4y6OPve4tv2hsDFNp3X3";
+    public static final String PAYPAL_KEY = "";
 
     public static final int REQUEST_CODE_PAYMENT = 1;
     public static final int REQUEST_CODE_FUTURE_PAYMENT = 2;
