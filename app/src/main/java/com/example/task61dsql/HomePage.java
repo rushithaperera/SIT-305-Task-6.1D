@@ -68,6 +68,11 @@ public class HomePage extends AppCompatActivity {
             startActivity(intent);
         }
 
+        if(id == R.id.menu4){
+            Intent intent = new Intent(this, HomePage.class);
+            startActivity(intent);
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }

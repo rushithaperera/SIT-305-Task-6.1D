@@ -14,4 +14,8 @@
         android:id="@+id/menu3">
     </item>
 
+    <item android:title="My Cart"
+        android:id="@+id/menu4">
+    </item>
+
 </menu>

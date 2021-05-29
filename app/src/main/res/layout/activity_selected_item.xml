@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectedItem">
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/imgLeft"
+        app:layout_constraintEnd_toEndOf="@id/imgRight"
+        app:layout_constraintTop_toBottomOf="@id/imgTop"
+        app:layout_constraintBottom_toTopOf="@id/imgBot"
+        app:srcCompat="@drawable/food1" />
+
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Title                 :"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/imgLeft"
+        app:layout_constraintEnd_toEndOf="@id/titleRight"
+        app:layout_constraintTop_toBottomOf="@id/titleTop"
+        app:layout_constraintBottom_toTopOf="@id/titleBot"/>
+
+    <TextView
+        android:id="@+id/lblDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Description    :"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/imgLeft"
+        app:layout_constraintEnd_toEndOf="@id/titleRight"
+        app:layout_constraintTop_toBottomOf="@id/descTop"
+        app:layout_constraintBottom_toTopOf="@id/descBot"/>
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Date                :"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/imgLeft"
+        app:layout_constraintEnd_toEndOf="@id/titleRight"
+        app:layout_constraintTop_toBottomOf="@id/dateTop"
+        app:layout_constraintBottom_toTopOf="@id/dateBot"/>
+
+
+    <TextView
+        android:id="@+id/lblpickup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Pick up Time :"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/imgLeft"
+        app:layout_constraintEnd_toEndOf="@id/titleRight"
+        app:layout_constraintTop_toBottomOf="@id/pickTop"
+        app:layout_constraintBottom_toTopOf="@id/pickBot"/>
+
+    <TextView
+        android:id="@+id/lblquantity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Quantity         :"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/imgLeft"
+        app:layout_constraintEnd_toEndOf="@id/titleRight"
+        app:layout_constraintTop_toBottomOf="@id/qtyTop"
+        app:layout_constraintBottom_toTopOf="@id/qtyBot"/>
+
+    <TextView
+        android:id="@+id/lbllocation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Location        :"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/imgLeft"
+        app:layout_constraintEnd_toEndOf="@id/titleRight"
+        app:layout_constraintTop_toBottomOf="@id/locationTop"
+        app:layout_constraintBottom_toTopOf="@id/locationBot"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:text="Veges"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/inputLeft"
+        app:layout_constraintEnd_toEndOf="@id/inputRight"
+        app:layout_constraintTop_toBottomOf="@id/titleTop"
+        app:layout_constraintBottom_toTopOf="@id/titleBot"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Fresh homegrown Vegetable pack......"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/inputLeft"
+        app:layout_constraintEnd_toEndOf="@id/inputRight"
+        app:layout_constraintTop_toBottomOf="@id/descTop"
+        app:layout_constraintBottom_toTopOf="@id/descBot"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="29/05/2021"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintStart_toStartOf="@id/inputLeft"
+        app:layout_constraintEnd_toEndOf="@id/inputRight"
+        app:layout_constraintTop_toBottomOf="@id/dateTop"
+        app:layout_constraintBottom_toTopOf="@id/dateBot"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="17:30 PM"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/inputLeft"
+        app:layout_constraintEnd_toEndOf="@id/inputRight"
+        app:layout_constraintTop_toBottomOf="@id/pickTop"
+        app:layout_constraintBottom_toTopOf="@id/pickBot"/>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="2Kgs"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/inputLeft"
+        app:layout_constraintEnd_toEndOf="@id/inputRight"
+        app:layout_constraintTop_toBottomOf="@id/qtyTop"
+        app:layout_constraintBottom_toTopOf="@id/qtyBot"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Burwood"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/inputLeft"
+        app:layout_constraintEnd_toEndOf="@id/inputRight"
+        app:layout_constraintTop_toBottomOf="@id/locationTop"
+        app:layout_constraintBottom_toTopOf="@id/locationBot"/>
+
+    <ImageButton
+        android:id="@+id/google_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay With Google Pay"
+        android:src="@drawable/paypal_button"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@id/btnPayLeft"
+        app:layout_constraintEnd_toEndOf="@id/btnPayRight"
+        app:layout_constraintTop_toBottomOf="@id/btnPayTop"
+        app:layout_constraintBottom_toTopOf="@id/btnPayBot"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imgLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imgRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imgTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imgBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/descLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/descRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+
+
+        <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.42"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/descTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/descBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dateTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dateBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/pickTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/pickBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.71"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qtyTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.73"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/qtyBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.78"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/locationTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/locationBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btnPayLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btnPayRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btnPayTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btnPayBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -47,7 +47,7 @@ public class Signup extends AppCompatActivity {
                         Boolean insert = dataBase.insertData(FullName, Email, Phone, Address, Password);
                         if(insert == true){
                             Toast.makeText(Signup.this, "Successful", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(), HomePage.class);
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(intent);
                         }else{
                             Toast.makeText(Signup.this, "Failed", Toast.LENGTH_SHORT).show();
